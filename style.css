@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+body{
+    height: 100%;
+    background: #fffde6;
+    background: linear-gradient(180deg, rgba(255, 253, 230, 1) 0%, rgba(255, 217, 150, 1) 57%, rgba(252, 219, 255, 1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
