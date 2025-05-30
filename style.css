@@ -20,8 +20,23 @@ body{
     margin-top: -4rem;
 }
 
+.scroll-fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.scroll-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .img-filter{
 
+}
+
+.img-height{
+    height: 400px;
 }
 
 .fs-small{
@@ -52,32 +67,18 @@ body{
     border-radius: 10px;
 }
 
-.parallax {
-      background-image: url('sua-imagem.jpg'); /* Substitua pelo seu caminho */
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 100vh;
-    }
+table tr:first-child th:first-child {
+border-top-left-radius: 1rem;
+}
 
-    .conteudo {
-      background-color: rgba(255, 255, 255, 0.8);
-      padding: 60px;
-    }
+table tr:first-child th:last-child {
+border-top-right-radius: 1rem;
+}
 
-    table tr:first-child th:first-child {
-    border-top-left-radius: 1rem;
-  }
+table tr:last-child td:first-child {
+border-bottom-left-radius: 1rem;
+}
 
-  table tr:first-child th:last-child {
-    border-top-right-radius: 1rem;
-  }
-
-  table tr:last-child td:first-child {
-    border-bottom-left-radius: 1rem;
-  }
-
-  table tr:last-child td:last-child {
-    border-bottom-right-radius: 1rem;
-  }
+table tr:last-child td:last-child {
+border-bottom-right-radius: 1rem;
+}
