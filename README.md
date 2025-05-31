@@ -24,8 +24,15 @@ A estrutura principal do projeto inclui:
 - Layout responsivo para diferentes tamanhos de tela
 - Páginas de ajuda e política de privacidade integradas
 
-  ##Capturas de tela da aplicação:
+## 📷 Capturas de tela da aplicação:
   ![Início da página](images/img-start.png)
+
+  ![Conteúdo informativo](images/img-mid.png)
+  
+  ![Seção de avaliação](images/img-tb.png)
+
+  ![Conteúdos adicionais](images/img-end.png)
+  
 
 ## 🛠️ Como executar
 
