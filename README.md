@@ -24,6 +24,9 @@ A estrutura principal do projeto inclui:
 - Layout responsivo para diferentes tamanhos de tela
 - Páginas de ajuda e política de privacidade integradas
 
+  ##Capturas de tela da aplicação:
+  ![Início da página](images/img-start.png)
+
 ## 🛠️ Como executar
 
 1. Clone o repositório:
