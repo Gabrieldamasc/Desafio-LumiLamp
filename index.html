@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LumiLamp</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-      <h1 class="big-text text-dark position-absolute top-0 start-50 translate-middle-x margin-top fw-bolder">
-          LumiLamp
-      </h1>
+  <h1 class="big-text position-absolute top-0 start-50 translate-middle-x margin-top fw-bolder">
+      LumiLamp
+  </h1>
+
+ <div class="d-flex justify-content-end m-3">
+  <button id="toggleThemeBtn" class="btn btn-secondary">
+    <i id="themeIcon" class="bi bi-sun"></i>
+  </button>
+</div>
+
   <main>
         <div class="container text-black p-5 mt-5">
           <h2 class="fs-4 fw-bolder text-center mb-5 text-shadow p-0 yellow-color scroll-fade hide-element">
@@ -192,7 +201,7 @@
     </h2>
 
     <p class="m-3 fw-bold">
-      Envie seus dados de contato que te chamaremos oferecer as melhores condições
+      Envie seus dados de contato que te chamaremos para oferecer as melhores condições
     </p>
 
     <form class="container">
@@ -293,6 +302,29 @@
         toast.show();
       });
     });
+  </script>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+  const toggleBtn = document.getElementById("toggleThemeBtn");
+  const themeIcon = document.getElementById("themeIcon");
+  const body = document.body;
+
+  let darkMode = false;
+
+    toggleBtn.addEventListener("click", () => {
+      darkMode = !darkMode;
+      body.classList.toggle("dark-mode", darkMode);
+
+      if (darkMode) {
+        themeIcon.classList.remove("bi-sun");
+        themeIcon.classList.add("bi-moon");
+      } else {
+        themeIcon.classList.remove("bi-moon");
+        themeIcon.classList.add("bi-sun");
+      }
+    });
+  });
   </script>
 </body>
 </html>
