@@ -39,3 +39,7 @@ A estrutura principal do projeto inclui:
 1. Clone o repositório:
    ```bash
    git clone https://github.com/Gabrieldamasc/Desafio-LumiLamp.git
+
+2. Acesse o site:
+   ```bash
+   https://gabrieldamasc.github.io/Desafio-LumiLamp/
