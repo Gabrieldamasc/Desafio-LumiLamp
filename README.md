@@ -16,7 +16,7 @@ A estrutura principal do projeto inclui:
 
 - **HTML5** – Estruturação das páginas
 - **CSS3** – Estilização e responsividade
-- - **Bootstrap** – Framework front-end para design responsivo
+- **Bootstrap** – Framework front-end para design responsivo
 
 ## ✅ Funcionalidades
 
